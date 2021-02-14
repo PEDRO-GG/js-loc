@@ -1,13 +1,106 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1 {
+  color: #3a4eff;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 1em;
+}
+main {
+  background-color: #ede9e9;
+  color: #3b6bf9;
+  max-width: 600px;
+  height: 20em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  margin-right: 1rem;
+}
+h3 {
+  color: #3a4eff;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  padding-top: 1.5rem;
+}
+/* Styles for the input file */
+.input-file {
+  /* Hides the input */
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+label {
+  background-color: hsl(222, 100%, 95%);
+  padding: 12px 24px;
+  color: #3b6bf9;
+  border-radius: 6px;
+  border-bottom: 4px solid hsl(221, 89%, 85%);
+  border-top: 0px solid hsl(221, 89%, 85%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+label:focus,
+label:hover {
+  border-bottom-width: 0;
+  border-top-width: 4px;
+}
+
+/*Nav bar styles*/
+nav {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  font-size: 2em;
+  flex-basis: 25%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+.active,
+a:hover,
+a:focus {
+  border-bottom: 0.5rem solid #3b6bf9;
+  cursor: pointer;
+}
+
+/* Grid styles*/
+.content {
+  background-color: #ede9e9;
+}
+.grid {
+  border: 1px solid red;
+}
+.grid-item {
+  color: #3b6bf9;
+  font-size: 2rem;
+  margin: 1.5rem;
+}
+span {
+  font-weight: 900;
+}
+input {
+  cursor: text;
+  padding: 1px 2px;
+  border-width: 2px;
+  font: inherit;
+  color: currentColor;
+  width: 8rem;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  padding: 6px 12px;
+  padding-right: 0;
+  background: none;
+}
+.calculate-rate {
+  color: #3a4eff;
+  text-align: center;
+  font-size: 2rem;
 }
